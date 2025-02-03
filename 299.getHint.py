@@ -1,5 +1,10 @@
 class Solution:
     def getHint(self, secret: str, guess: str) -> str:
+        # from collections import Counter
+        # from itertools import starmap
+        # from operator import eq
+        # A = sum(starmap(eq, zip(secret, guess)))
+        # B = sum((Counter(secret) & Counter(guess)).values()) - A
         cows = 0
         bulls = 0
         unmatch_s = {}
